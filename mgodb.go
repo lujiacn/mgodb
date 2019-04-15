@@ -114,7 +114,7 @@ var ObjectIDBinder = revel.Binder{
 			output[name] = hexStr
 
 		} else {
-			revel.ERROR.Print("ObjectIDBinder.Unbind - invalid ObjectId!")
+			revel.AppLog.Error("ObjectIDBinder.Unbind - invalid ObjectId!")
 			output[name] = ""
 
 		}
